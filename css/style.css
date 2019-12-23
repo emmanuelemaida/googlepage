@@ -1,0 +1,19 @@
+/* header {
+    display: flex;
+} */
+
+#headerdestro{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 400px;
+    float: right;
+    margin: 5px;
+    width:200px;
+}
+
+#headersinistro{
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+    width:100px;
+}

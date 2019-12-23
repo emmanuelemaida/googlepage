@@ -17,3 +17,32 @@
     float: left;
     width:100px;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "upper-left . . . upper-right" ". . Center . ." ". . . . .";
+  }
+  
+  .upper-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "header-left header-left ." ". . .";
+    grid-area: upper-left;
+  }
+  
+  .header-left { grid-area: header-left; }
+  
+  .upper-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: ". header-right header-right" ". . .";
+    grid-area: upper-right;
+  }
+  
+  .header-right { grid-area: header-right; }
+  
+  .Center { grid-area: Center; }
